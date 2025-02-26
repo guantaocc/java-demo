@@ -20,6 +20,7 @@
 		<mybatis.version>3.5.13</mybatis.version>
 		<mybatis-spring.version>2.1.1</mybatis-spring.version>
 		<mysql.version>5.1.49</mysql.version>
+		<tomcat.version>9.0.76</tomcat.version>
 	</properties>
 	<dependencies>
 		<!-- Spring Framework -->
@@ -32,6 +33,12 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 
@@ -60,12 +67,6 @@
 			<artifactId>HikariCP</artifactId>
 			<version>${hikaricp.version}</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>${hsqldb.version}</version>
-		</dependency>
 		
 		<!-- MyBatis -->
 		<dependency>
@@ -85,6 +86,31 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.version}</version>
 		</dependency>
+		
+		<!-- Logback Dependencies -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+		
+		<!-- Embedded Tomcat -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>${tomcat.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<version>${tomcat.version}</version>
+		</dependency>
+		
 	</dependencies>
 
 </project>
