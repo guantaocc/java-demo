@@ -1,10 +1,8 @@
 package com.itranswarp.learnjava;
 
-import java.util.Properties;
+import java.util.List;
 
 import javax.sql.DataSource;
-
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
@@ -14,14 +12,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.orm.hibernate5.HibernateTransactionManager;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.mybatis.spring.SqlSessionFactoryBean;
-
-import com.itranswarp.learnjava.entity.AbstractEntity;
 import com.itranswarp.learnjava.entity.User;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
+
 import com.itranswarp.learnjava.service.UserService;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -30,35 +27,20 @@ import com.zaxxer.hikari.HikariDataSource;
 @ComponentScan
 @EnableTransactionManagement
 @PropertySource("jdbc.properties")
+@MapperScan("com.itranswarp.learnjava.mapper")  // 添加Mapper扫描
 public class AppConfig {
 
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         UserService userService = context.getBean(UserService.class);
-        if (userService.fetchUserByEmail("bob@example.com") == null) {
-            User bob = userService.register("bob@example.com", "bob123", "Bob");
-            System.out.println("Registered ok: " + bob);
-        }
-        if (userService.fetchUserByEmail("alice@example.com") == null) {
-            User alice = userService.register("alice@example.com", "helloalice", "Bob");
-            System.out.println("Registered ok: " + alice);
-        }
-        // 查询所有用户:
-        for (User u : userService.getUsers(1)) {
-            System.out.println(u);
-        }
-        User bob = userService.login("bob@example.com", "bob123");
-        System.out.println(bob);
+        userService.deleteUser(4);        
         ((ConfigurableApplicationContext) context).close();
     }
 
     @Bean
     DataSource createDataSource(
-            // JDBC URL:
             @Value("${jdbc.url}") String jdbcUrl,
-            // JDBC username:
             @Value("${jdbc.username}") String jdbcUsername,
-            // JDBC password:
             @Value("${jdbc.password}") String jdbcPassword) {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl(jdbcUrl);
@@ -71,20 +53,6 @@ public class AppConfig {
     }
 
     @Bean
-    LocalSessionFactoryBean createSessionFactory(@Autowired DataSource dataSource) {
-        Properties props = new Properties();
-        props.setProperty("hibernate.hbm2ddl.auto", "update"); // 生产环境不要使用
-        props.setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect");
-        props.setProperty("hibernate.show_sql", "true");
-        LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        sessionFactoryBean.setDataSource(dataSource);
-        // 扫描指定的package获取所有entity class:
-        sessionFactoryBean.setPackagesToScan(AbstractEntity.class.getPackage().getName());
-        sessionFactoryBean.setHibernateProperties(props);
-        return sessionFactoryBean;
-    }
-
-    @Bean
     SqlSessionFactoryBean createSqlSessionFactoryBean(@Autowired DataSource dataSource) {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
@@ -92,7 +60,7 @@ public class AppConfig {
     }
 
     @Bean
-    PlatformTransactionManager createTxManager(@Autowired SessionFactory sessionFactory) {
-        return new HibernateTransactionManager(sessionFactory);
+    PlatformTransactionManager createTxManager(@Autowired DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
     }
 }

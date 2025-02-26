@@ -1,87 +1,49 @@
 package com.itranswarp.learnjava.service;
 
+
+import java.time.LocalDateTime;
 import java.util.List;
 
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.itranswarp.learnjava.entity.User;
+import com.itranswarp.learnjava.mapper.UserMapper;
 
 @Component
 @Transactional
 public class UserService {
-
     @Autowired
-    SessionFactory sessionFactory;
+    UserMapper userMapper;
+    
+    public void createUser(String username, String password, String email, String createBy, String updateBy) {
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(password);
+        user.setEmail(email);
+        user.setCreateBy(createBy);
+        user.setUpdateBy(updateBy);
+        user.setCreateTime(LocalDateTime.now());
+        userMapper.insert(user);
+    }
 
-    public User fetchUserById(long id) {
-        return sessionFactory.getCurrentSession().byId(User.class).load(id);
+    public List<User> getUserByName(String username) {
+        return userMapper.getByUsername(username);
     }
 
     public User getUserById(long id) {
-        User user = fetchUserById(id);
-        if (user == null) {
-            throw new RuntimeException("user not found by id: " + id);
-        }
-        return user;
+        return userMapper.getById(id);
     }
 
-    public User fetchUserByEmail(String email) {
-        User example = new User();
-        example.setEmail(email);
-        List<User> list = sessionFactory.getCurrentSession().createQuery("from User u where u.email = ?1", User.class).setParameter(1, email).list();
-        return list.isEmpty() ? null : list.get(0);
+    public void updateUser(long id, String newUserName) {
+        User user = userMapper.getById(id);
+        user.setUsername(newUserName);
+        user.setUpdateTime(LocalDateTime.now());
+        userMapper.update(user);
     }
 
-    public User getUserByEmail(String email) {
-        User user = fetchUserByEmail(email);
-        if (user == null) {
-            throw new RuntimeException("user not found by email: " + email);
-        }
-        return user;
-    }
-
-    public List<User> getUsers(int pageIndex) {
-        int pageSize = 100;
-        return sessionFactory.getCurrentSession().createQuery("from User u", User.class).setFirstResult((pageIndex - 1) * pageSize).setMaxResults(pageSize)
-                .list();
-    }
-
-    public User signin(String email, String password) {
-        List<User> list = sessionFactory.getCurrentSession().createQuery("from User u where u.email = ?1 and u.password = ?2", User.class)
-                .setParameter(1, email).setParameter(2, password).list();
-        return list.isEmpty() ? null : list.get(0);
-    }
-
-    public User login(String email, String password) {
-        List<User> list = sessionFactory.getCurrentSession().createNamedQuery("login", User.class) // named query
-                .setParameter("e", email).setParameter("pwd", password).list();
-        return list.isEmpty() ? null : list.get(0);
-    }
-
-    public User register(String email, String password, String name) {
-        User user = new User();
-        user.setEmail(email);
-        user.setPassword(password);
-        user.setName(name);
-        sessionFactory.getCurrentSession().persist(user);
-        return user;
-    }
-
-    public void updateUser(Long id, String name) {
-        User user = getUserById(id);
-        user.setName(name);
-        sessionFactory.getCurrentSession().merge(user);
-    }
-
-    public boolean deleteUser(Long id) {
-        User user = fetchUserById(id);
-        if (user != null) {
-            sessionFactory.getCurrentSession().remove(user);
-            return true;
-        }
-        return false;
+    public void deleteUser(long id) {
+        userMapper.deleteById(id);
     }
 }

@@ -19,6 +19,7 @@
 		<spring.version>5.3.27</spring.version>
 		<mybatis.version>3.5.13</mybatis.version>
 		<mybatis-spring.version>2.1.1</mybatis-spring.version>
+		<mysql.version>5.1.49</mysql.version>
 	</properties>
 	<dependencies>
 		<!-- Spring Framework -->
@@ -76,6 +77,13 @@
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>${mybatis-spring.version}</version>
+		</dependency>
+		
+		<!-- MySQL Driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
 		</dependency>
 	</dependencies>
 
