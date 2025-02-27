@@ -26,5 +26,5 @@
     <!--    <bean class="org.springframework.context.annotation.ConfigurationClassPostProcessor"/>-->
 
     <!-- 其他Bean定义可以继续添加在这里 -->
-
+    <bean id="MySessionFactoryBean" class="com.test.spring.MySessionFactoryBean"></bean>
 </beans>

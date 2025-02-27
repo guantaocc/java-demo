@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="karl@8.141.10.85">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.51">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -747,39 +747,39 @@ karl|schema||karl||UPDATE|G</Grants>
     </table>
     <column id="228" parent="227" name="id">
       <AutoIncrement>7</AutoIncrement>
-      <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint(20)|0s</StoredType>
     </column>
     <column id="229" parent="227" name="username">
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="230" parent="227" name="password">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="231" parent="227" name="email">
-      <DasType>varchar(100)|0s</DasType>
       <Position>4</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="232" parent="227" name="create_by">
-      <DasType>varchar(50)|0s</DasType>
       <Position>5</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="233" parent="227" name="update_by">
-      <DasType>varchar(50)|0s</DasType>
       <Position>6</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="234" parent="227" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>7</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="235" parent="227" name="update_time">
-      <DasType>datetime|0s</DasType>
       <Position>8</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="236" parent="227" name="PRIMARY">
       <ColNames>id</ColNames>
