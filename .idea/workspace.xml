@@ -9,20 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86fba2eb-b2a6-4dfc-95ce-c49aa852ffcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hello/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/file.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/ExResolver/MyExceptionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hello/controller/ExResolver/MyExceptionResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/Exception/LoginException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hello/controller/Exception/LoginException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hello/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hello/controller/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="86fba2eb-b2a6-4dfc-95ce-c49aa852ffcf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +338,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740550712738</updated>
       <workItem from="1740550714170" duration="12682000" />
-      <workItem from="1740619095134" duration="12612000" />
+      <workItem from="1740619095134" duration="13281000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <option name="closed" value="true" />
