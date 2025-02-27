@@ -11,6 +11,10 @@
     <title>Title</title>
 </head>
 <body>
- 测试界面
+ <form method="post" action="${pageContext.request.contextPath}/upload/test" enctype="multipart/form-data">
+     username: <input type="username" name="username">
+     file: <input type="file" name="source">
+     <input type="submit" value="提交">
+ </form>
 </body>
 </html>

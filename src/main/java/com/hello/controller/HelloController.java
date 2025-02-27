@@ -1,5 +1,6 @@
 package com.hello.controller;
 
+import com.hello.controller.Exception.LoginException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 
 @Controller
-@RequestMapping("/hello")
+@RequestMapping("/index")
 public class HelloController {
 
     @RequestMapping("/test1")
@@ -39,5 +40,23 @@ public class HelloController {
         user.setBirth(new Date());
         user.setUsername("xx");
         return user;
+    }
+
+    @ResponseBody
+    @RequestMapping("/login")
+    public User login(Integer id){
+        if(id.equals(1)){
+            User user = new User();
+            user.setBirth(new Date());
+            user.setUsername("xx");
+            return user;
+        } else {
+            throw new LoginException("登录异常");
+        }
+    }
+
+    @RequestMapping("/upload")
+    public String upload(){
+        return "index";
     }
 }

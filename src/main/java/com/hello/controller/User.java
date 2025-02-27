@@ -1,5 +1,6 @@
 package com.hello.controller;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,5 +16,6 @@ public class User {
 
     private String username;
 
+    @JsonFormat(pattern = "yyyy-mm-dd HH:mm:ss")
     private Date birth;
 }
