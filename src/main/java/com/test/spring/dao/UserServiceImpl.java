@@ -1,6 +1,8 @@
 package com.test.spring.dao;
 
-public class UserDaoImpl implements UserDao {
+import com.test.spring.entity.User;
+
+public class UserServiceImpl implements UserService {
     public void insertUser(){
         System.out.println("xxx");
     }
