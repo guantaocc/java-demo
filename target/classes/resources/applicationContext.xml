@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 属性占位符配置，用于从外部文件加载属性 -->
+    <!--    <context:property-placeholder location="classpath:application.properties"/>-->
+
+    <!-- 组件扫描配置，用于自动扫描指定包下的注解（如@Component、@Service、@Repository等） -->
+    <!--    <context:component-scan base-package="com.example.demo"/>-->
+
+    <!-- spring启动时会生产这个类 -->
+    <bean id="User" class="com.test.spring.entity.User">
+        <!-- 通过属性占位符注入属性值 -->
+        <property name="id" value="1"></property>
+    </bean>
+    <bean id="UserDaoImpl" class="com.test.spring.dao.UserDaoImpl">
+        <!-- 通过属性占位符注入属性值 -->
+    </bean>
+
+    <!-- 使用Java配置类作为配置源 -->
+    <!--    <bean class="org.springframework.context.annotation.ConfigurationClassPostProcessor"/>-->
+
+    <!-- 其他Bean定义可以继续添加在这里 -->
+    <bean id="MySessionFactoryBean" class="com.test.spring.MySessionFactoryBean"></bean>
+</beans>

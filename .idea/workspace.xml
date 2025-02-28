@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86fba2eb-b2a6-4dfc-95ce-c49aa852ffcf" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" afterDir="false" />
@@ -26,6 +27,27 @@
       <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/test/spring/dao/UserDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/test/spring/dao/UserDaoImpl.class" beforeDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/com/test/spring/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/test/spring/MySessionFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/test/spring/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/test/spring/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/test/spring/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-data-hibernate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-data-hibernate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/MySessionFactoryBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/dao/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/spring/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/test/spring/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+>>>>>>> 6586a72d65f69675260fa42f3377ccf7f828a067
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/spring/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/spring/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +67,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="spring" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -65,6 +92,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -97,6 +125,42 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.AppConfig.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AppTest.FactoryBean.executor": "Debug",
+    "JUnit.AppTest.executor": "Debug",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat Server.Tomcat 8.5.37.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "database.data.extractors.current.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "spring",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/npm_packages/java-demo/src/test/java/com/test/spring",
+    "last_opened_file_path": "/Users/guantao/Downloads/spring-data-hibernate",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 6586a72d65f69675260fa42f3377ccf7f828a067
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -109,6 +173,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -116,7 +183,11 @@
       <recent name="com.test.spring" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.AppTest.TestDynamicProxy">
+=======
+  <component name="RunManager" selected="JUnit.AppTest.FactoryBean">
+>>>>>>> 6586a72d65f69675260fa42f3377ccf7f828a067
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-data-hibernate" />
       <extension name="coverage">
@@ -125,8 +196,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="com.test.spring" />
       <option name="MAIN_CLASS_NAME" value="com.test.spring.AppTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -419,7 +493,8 @@
               </StagingTargetModelImpl>
             </list>
           </option>
-          <option name="transportHostId" />
+          <option name="transportHostId" value="" />
+          <host-id />
         </data>
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
@@ -441,13 +516,18 @@
       <item itemvalue="JUnit.AppTest.setFactoryBean" />
       <item itemvalue="JUnit.AppTest" />
       <item itemvalue="JUnit.AppTest.FactoryBean" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.37" />
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.37" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.AppTest.TestDynamicProxy" />
         <item itemvalue="JUnit.AppTest.invokeProxy" />
         <item itemvalue="JUnit.AppTest.setFactoryBean" />
+=======
+        <item itemvalue="JUnit.AppTest.FactoryBean" />
+        <item itemvalue="JUnit.AppTest" />
+>>>>>>> 6586a72d65f69675260fa42f3377ccf7f828a067
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.FactoryBean" />
       </list>
@@ -456,11 +536,15 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-1.8.0_402-corretto-1.8.0_402-f644763e9732-af3fa2b8" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="逻辑" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="86fba2eb-b2a6-4dfc-95ce-c49aa852ffcf" name="Changes" comment="" />
@@ -469,10 +553,17 @@
       <option name="presentableId" value="Default" />
       <updated>1740550712738</updated>
       <workItem from="1740550714170" duration="12682000" />
+<<<<<<< HEAD
       <workItem from="1740619095134" duration="19356000" />
       <workItem from="1740707038002" duration="105000" />
       <workItem from="1740707280774" duration="12831000" />
       <workItem from="1740736113201" duration="840000" />
+=======
+      <workItem from="1740619095134" duration="19299000" />
+      <workItem from="1740664519473" duration="356000" />
+      <workItem from="1740664884539" duration="281000" />
+      <workItem from="1740665171628" duration="1925000" />
+>>>>>>> 6586a72d65f69675260fa42f3377ccf7f828a067
     </task>
     <task id="LOCAL-00001" summary="提交">
       <option name="closed" value="true" />
@@ -503,5 +594,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="提交" />
     <option name="LAST_COMMIT_MESSAGE" value="提交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/com/test/spring/AppTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
