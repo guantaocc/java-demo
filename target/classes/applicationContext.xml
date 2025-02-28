@@ -2,10 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
-                           http://www.springframework.org/schema/context/spring-context.xsd">
+                           http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- 属性占位符配置，用于从外部文件加载属性 -->
     <!--    <context:property-placeholder location="classpath:application.properties"/>-->
@@ -18,13 +19,31 @@
         <!-- 通过属性占位符注入属性值 -->
         <property name="id" value="1"></property>
     </bean>
-    <bean id="UserDaoImpl" class="com.test.spring.dao.UserDaoImpl">
-        <!-- 通过属性占位符注入属性值 -->
+    <bean id="userService" class="com.test.spring.dao.UserServiceImpl">
+    <!-- 通过属性占位符注入属性值 -->
     </bean>
+    <!--    额外功能-->
+    <bean id="before01" class="com.test.spring.advice.MyBeforeAdvice"></bean>
+    <bean id="after01" class="com.test.spring.advice.MyAfterAdvice"></bean>
+    <bean id="MethodAop01" class="com.test.spring.advice.MyMethodAdvice"></bean>
+
+    <!--    aspect编织，返回对象的代理 -->
+<!--    <aop:config>-->
+<!--        <aop:aspect ref="UserService">-->
+
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+    <aop:config>
+        <aop:pointcut id="pt01" expression="execution(* com.test.spring.dao.UserServiceImpl.*(..))"/>
+        <aop:advisor advice-ref="before01" pointcut-ref="pt01"></aop:advisor>
+        <aop:advisor advice-ref="after01" pointcut-ref="pt01"></aop:advisor>
+        <aop:advisor advice-ref="MethodAop01" pointcut-ref="pt01"></aop:advisor>
+    </aop:config>
 
     <!-- 使用Java配置类作为配置源 -->
     <!--    <bean class="org.springframework.context.annotation.ConfigurationClassPostProcessor"/>-->
 
     <!-- 其他Bean定义可以继续添加在这里 -->
-
+    <bean id="MySessionFactoryBean" class="com.test.spring.MySessionFactoryBean"></bean>
 </beans>

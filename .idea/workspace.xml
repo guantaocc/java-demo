@@ -10,38 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86fba2eb-b2a6-4dfc-95ce-c49aa852ffcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/MySessionFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/spring/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0/storage_v2/_src_/schema/karl.EB4yAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca849ff0-254f-41e5-b4db-920683558bb0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/ExResolver/MyExceptionResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/Exception/LoginException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hello/controller/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hello/controller/ExResolver/MyExceptionResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hello/controller/Exception/LoginException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hello/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hello/controller/UploadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hello/controller/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/MySessionFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/MySessionFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyAfterAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyAfterAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyBeforeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyBeforeAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyMethodAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyMethodAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyThrowsAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/advice/MyThrowsAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/spring/dao/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/spring/dao/UserServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/spring/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/spring/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/spring/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/spring/dao/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/spring/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/spring/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,46 +65,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.AppConfig.executor": "Run",
-    "JUnit.AppTest.FactoryBean.executor": "Run",
-    "JUnit.AppTest.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 8.5.37.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "database.data.extractors.current.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "spring",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/npm_packages/java-demo/src/test/java/com/test/spring",
-    "last_opened_file_path": "D:/npm_packages/java-demo",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AppConfig.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.FactoryBean.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.TestDynamicProxy.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AppTest.invokeProxy.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.setFactoryBean.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 8.5.37.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;spring&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/npm_packages/java-demo/src/test/java/com/test/spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/npm_packages/java-demo&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ],
-    "DatabaseDriversLRU": [
-      "mysql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -128,7 +116,7 @@
       <recent name="com.test.spring" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.AppTest.TestDynamicProxy">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-data-hibernate" />
       <extension name="coverage">
@@ -155,6 +143,54 @@
       <option name="PACKAGE_NAME" value="com.test.spring" />
       <option name="MAIN_CLASS_NAME" value="com.test.spring.AppTest" />
       <option name="METHOD_NAME" value="FactoryBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.TestDynamicProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-data-hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.spring" />
+      <option name="MAIN_CLASS_NAME" value="com.test.spring.AppTest" />
+      <option name="METHOD_NAME" value="TestDynamicProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.invokeProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-data-hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.spring" />
+      <option name="MAIN_CLASS_NAME" value="com.test.spring.AppTest" />
+      <option name="METHOD_NAME" value="invokeProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.setFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-data-hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.spring" />
+      <option name="MAIN_CLASS_NAME" value="com.test.spring.AppTest" />
+      <option name="METHOD_NAME" value="setFactoryBean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -400,12 +436,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AppTest.TestDynamicProxy" />
+      <item itemvalue="JUnit.AppTest.invokeProxy" />
+      <item itemvalue="JUnit.AppTest.setFactoryBean" />
       <item itemvalue="JUnit.AppTest" />
       <item itemvalue="JUnit.AppTest.FactoryBean" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.37" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.TestDynamicProxy" />
+        <item itemvalue="JUnit.AppTest.invokeProxy" />
+        <item itemvalue="JUnit.AppTest.setFactoryBean" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.FactoryBean" />
       </list>
@@ -427,7 +469,10 @@
       <option name="presentableId" value="Default" />
       <updated>1740550712738</updated>
       <workItem from="1740550714170" duration="12682000" />
-      <workItem from="1740619095134" duration="19299000" />
+      <workItem from="1740619095134" duration="19356000" />
+      <workItem from="1740707038002" duration="105000" />
+      <workItem from="1740707280774" duration="12831000" />
+      <workItem from="1740736113201" duration="840000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <option name="closed" value="true" />

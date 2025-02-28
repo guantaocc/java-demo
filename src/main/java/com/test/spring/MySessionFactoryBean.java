@@ -6,7 +6,8 @@ public class MySessionFactoryBean implements FactoryBean {
 
     @Override
     public Object getObject() throws Exception {
-        return null;
+        Object obj = new Object();
+        return obj;
     }
 
     @Override
